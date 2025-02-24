@@ -1,8 +1,18 @@
-import { Module } from '@nestjs/common';
+import { Test, TestingModule } from '@nestjs/testing';
 import { DatabaseService } from './database.service';
 
-@Module({
-  providers: [DatabaseService],
-  exports: [DatabaseService],
-})
-export class DatabaseModule {}
+describe('DatabaseService', () => {
+  let service: DatabaseService;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [DatabaseService],
+    }).compile();
+
+    service = module.get<DatabaseService>(DatabaseService);
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeDefined();
+  });
+});
