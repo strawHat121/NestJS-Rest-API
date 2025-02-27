@@ -1,26 +1,14 @@
 # Nest JS Employee/Users API
 
-This is a NestJS application that uses Prisma and Neon PostgresDB for database management. The application provides APIs for managing users and employees.
+This is a NestJS application that uses Prisma and Neon PostgresDB for database management. The application provides APIs for managing employees.
 
 ## Features
-
-- **User Management:**
-  - Create, update, delete, and retrieve users.
-  - Filter users by role (INTERN, ENGINEER, ADMIN).
 
 - **Employee Management:**
   - Create, update, delete, and retrieve employees.
   - Filter employees by role (ADMIN, ENGINEER, INTERN).
 
 ## API Endpoints
-
-### Users
-
-- **GET /users**: Retrieve all users or filter by role.
-- **GET /users/:id**: Retrieve a user by ID.
-- **POST /users**: Create a new user.
-- **PATCH /users/:id**: Update a user by ID.
-- **DELETE /users/:id**: Delete a user by ID.
 
 ### Employees
 
